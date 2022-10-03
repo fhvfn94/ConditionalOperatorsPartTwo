@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1(){
         byte phone = 1;
@@ -46,6 +47,16 @@ public class Main {
             }
         } else {
             System.out.println( year + " год не високосный");
+        }
+    }
+    public static void task4(){
+        byte deliveryDistance = 95;
+        if (deliveryDistance <= 20){
+            System.out.println("Потребуются сутки на доставку");
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Потребуется дней: 2 на доставку");
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется 2.5 дня на доставку");
         }
     }
 }
